@@ -1,0 +1,12 @@
+﻿using RCA_Model.Tier_1;
+using RCA_Model.Tier_2;
+namespace RCA_Model.Tier_3
+{
+	public class TractionSystem : Base, Tier3
+	{
+		public TractionSystemType voltageCategory;
+		public List<TrackEdgeSection> appliesToTrackEdgeSection;
+		public int countryIdentifier;
+	}
+
+}
