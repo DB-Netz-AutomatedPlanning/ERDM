@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>ERDM</id>
+    <version>0.2.0</version>
+    <authors>DB Netz AG</authors>
+    <description>Europe's Rail Data Model</description>
+    <repository url="https://github.com/DB-Netz-AutomatedPlanning/ERDM.git" />
+    <dependencies>
+      <group targetFramework="net6.0">
+        <dependency id="Newtonsoft.Json" version="13.0.2" exclude="Build,Analyzers" />
+        <dependency id="System.Text.Json" version="7.0.1" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="F:\ERDM\ERDM_C#_Library_.Net_6\ERDM\ERDM\bin\Debug\net6.0\ERDM.dll" target="lib\net6.0\ERDM.dll" />
+  </files>
+</package>

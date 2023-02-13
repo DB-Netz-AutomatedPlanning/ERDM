@@ -1,0 +1,12 @@
+F:\ERDM\ERDM_C#_Library_.Net_6\ERDM\ERDM\obj\Debug\net6.0\ERDM.csproj.AssemblyReference.cache
+F:\ERDM\ERDM_C#_Library_.Net_6\ERDM\ERDM\obj\Debug\net6.0\ERDM.GeneratedMSBuildEditorConfig.editorconfig
+F:\ERDM\ERDM_C#_Library_.Net_6\ERDM\ERDM\obj\Debug\net6.0\ERDM.AssemblyInfoInputs.cache
+F:\ERDM\ERDM_C#_Library_.Net_6\ERDM\ERDM\obj\Debug\net6.0\ERDM.AssemblyInfo.cs
+F:\ERDM\ERDM_C#_Library_.Net_6\ERDM\ERDM\obj\Debug\net6.0\ERDM.csproj.CoreCompileInputs.cache
+F:\ERDM\ERDM_C#_Library_.Net_6\ERDM\ERDM\bin\Debug\net6.0\ERDM.deps.json
+F:\ERDM\ERDM_C#_Library_.Net_6\ERDM\ERDM\bin\Debug\net6.0\ERDM.dll
+F:\ERDM\ERDM_C#_Library_.Net_6\ERDM\ERDM\bin\Debug\net6.0\ERDM.pdb
+F:\ERDM\ERDM_C#_Library_.Net_6\ERDM\ERDM\obj\Debug\net6.0\ERDM.dll
+F:\ERDM\ERDM_C#_Library_.Net_6\ERDM\ERDM\obj\Debug\net6.0\refint\ERDM.dll
+F:\ERDM\ERDM_C#_Library_.Net_6\ERDM\ERDM\obj\Debug\net6.0\ERDM.pdb
+F:\ERDM\ERDM_C#_Library_.Net_6\ERDM\ERDM\obj\Debug\net6.0\ref\ERDM.dll
