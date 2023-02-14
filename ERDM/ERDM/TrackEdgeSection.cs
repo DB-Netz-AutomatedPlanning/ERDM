@@ -5,7 +5,7 @@ using System.Text.Json.Serialization;
 
 namespace ERDM.Tier_2
 {
-	public class TrackEdgeSection : Tier2
+	public class TrackEdgeSection : Base2
 	{
 		public string? hasStartTrackEdgePoint { get;set;}
 		public string? hasEndTrackEdgePoint { get;set;}

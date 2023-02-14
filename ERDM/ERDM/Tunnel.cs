@@ -6,7 +6,7 @@ using System.Text.Json.Serialization;
 
 namespace ERDM.Tier_3
 {
-	public class Tunnel : Tier3
+	public class Tunnel : Base3
 	{
 		public List<string>? consistsOfTunnelTube{get;set;}
 		[JsonConverter(typeof(TunnelTypeJsonConverter))]

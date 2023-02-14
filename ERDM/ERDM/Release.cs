@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 namespace ERDM.Tier_0
 {
-	public class Release : Tier0
+	public class Release : Base0
 	{
 		
 		public string? name{get;set;}

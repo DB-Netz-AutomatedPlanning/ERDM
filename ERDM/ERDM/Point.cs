@@ -10,7 +10,7 @@ namespace ERDM.Tier_3
 {
     [JsonDerivedType(typeof(SimplePoint), typeDiscriminator: "SimplePoint")]
     [JsonDerivedType(typeof(SlipCrossing), typeDiscriminator: "SlipCrossing")]
-    public abstract class Point : Tier3
+    public abstract class Point : Base3
 	{
 		public List<string>? appliesToTrackNode{get;set;}
 		public string? appliesToTrackArea{get;set;}

@@ -6,7 +6,7 @@ using System.Text.Json.Serialization;
 
 namespace ERDM.Tier_3
 {
-	public class Derailer : Tier3
+	public class Derailer : Base3
 	{
 		public string? appliesToTrackEdgePoint { get;set;}
 		public string? appliesToDpsGroup{get;set;}

@@ -7,7 +7,7 @@ using System.Text.Json.Serialization;
 
 namespace ERDM.Tier_2
 {
-	public class TrackEdgePoint : Tier2
+	public class TrackEdgePoint : Base2
 	{
 		public string? isPositionedOnTrackEdge { get;set;}
         [JsonConverter(typeof(DoubleThreeDecimalsConverter))]

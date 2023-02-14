@@ -5,7 +5,7 @@ using System.Text.Json.Serialization;
 
 namespace ERDM.Tier_1
 {
-	public class TrackNode : Tier1
+	public class TrackNode : Base1
 	{
 		[JsonConverter(typeof(TrackNodeTypeJsonConverter))]
 		public TrackNodeType? nodeType{get;set;}

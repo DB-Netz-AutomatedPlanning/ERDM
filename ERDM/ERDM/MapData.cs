@@ -10,7 +10,7 @@ using System.Collections.Generic;
 namespace ERDM.Tier_0
 {
 
-	public class MapData : Tier0
+	public class MapData : Base0
 	{
 
 		public string? name{get;set;}

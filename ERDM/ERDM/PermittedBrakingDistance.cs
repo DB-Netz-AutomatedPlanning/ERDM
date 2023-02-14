@@ -7,7 +7,7 @@ using System.Text.Json.Serialization;
 
 namespace ERDM.Tier_3
 {
-	public class PermittedBrakingDistance : Tier3
+	public class PermittedBrakingDistance : Base3
 	{
         [JsonConverter(typeof(DoubleThreeDecimalsConverter))]
         public double? permittedBrakingDistance{get;set;}

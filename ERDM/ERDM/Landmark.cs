@@ -6,7 +6,7 @@ using System.Text.Json.Serialization;
 
 namespace ERDM.Tier_3
 {
-	public class Landmark : Tier3
+	public class Landmark : Base3
 	{
 		public string? appliesToTrackEdgePoint { get;set;}
         [JsonConverter(typeof(LandmarkTypeJsonConverter))]

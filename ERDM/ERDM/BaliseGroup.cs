@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 namespace ERDM.Tier_3
 {
-	public class BaliseGroup : Tier3
+	public class BaliseGroup : Base3
 	{
 		public int? countryIdentifier{get;set;}
 		public int? baliseGroupIdentifier{get;set;}

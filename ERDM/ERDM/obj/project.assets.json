@@ -249,11 +249,11 @@
   "project": {
     "version": "0.2.0",
     "restore": {
-      "projectUniqueName": "F:\\ERDM\\ERDM_C#_Library_.Net_6\\ERDM\\ERDM\\ERDM.csproj",
+      "projectUniqueName": "F:\\ERDM\\ERDM_C#_Library\\ERDM\\ERDM\\ERDM\\ERDM.csproj",
       "projectName": "ERDM",
-      "projectPath": "F:\\ERDM\\ERDM_C#_Library_.Net_6\\ERDM\\ERDM\\ERDM.csproj",
+      "projectPath": "F:\\ERDM\\ERDM_C#_Library\\ERDM\\ERDM\\ERDM\\ERDM.csproj",
       "packagesPath": "C:\\Users\\k7ada\\.nuget\\packages\\",
-      "outputPath": "F:\\ERDM\\ERDM_C#_Library_.Net_6\\ERDM\\ERDM\\obj\\",
+      "outputPath": "F:\\ERDM\\ERDM_C#_Library\\ERDM\\ERDM\\ERDM\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\k7ada\\AppData\\Roaming\\NuGet\\NuGet.Config",

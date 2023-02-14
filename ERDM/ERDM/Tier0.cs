@@ -1,20 +1,19 @@
+﻿using ERDM.Tier_0;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-
-
-
-using System.Text.Json.Serialization;
-
-namespace ERDM.Tier_0
+namespace ERDM
 {
-    [JsonDerivedType(typeof(Version), typeDiscriminator: "Version")]
-    [JsonDerivedType(typeof(MapData), typeDiscriminator: "MapData")]
-    [JsonDerivedType(typeof(Release), typeDiscriminator: "Release")]
-    [JsonDerivedType(typeof(GeoCoordinates), typeDiscriminator: "GeoCoordinates")]
-    [JsonDerivedType(typeof(LineReference), typeDiscriminator: "LineReference")]
-    [JsonDerivedType(typeof(OperationalPoint), typeDiscriminator: "OperationalPoint")]
-    public abstract class Tier0 : MapDataObject
-	{
-        public string? id { get; set; }
+    public class Tier0
+    {
+        public List<Tier_0.Version>? Version { get; set; }
+        public List<MapData>? MapData { get; set; }
+        public List<Release>? Release { get; set; }
+        public List<GeoCoordinates>? GeoCoordinates { get; set; }
+        public List<LineReference>? LineReference { get; set; }
+        public List<OperationalPoint>? OperationalPoint { get; set; }
     }
-
 }

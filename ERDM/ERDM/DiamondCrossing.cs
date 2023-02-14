@@ -7,7 +7,7 @@ using System.Text.Json.Serialization;
 
 namespace ERDM.Tier_3
 {
-	public class DiamondCrossing : Tier3
+	public class DiamondCrossing : Base3
 	{
 		public string? appliesToTrackArea{ get;set;}
 		public string? appliesToAllocationSection{ get;set;}

@@ -1,17 +1,16 @@
+﻿using ERDM.Tier_1;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-using ERDM.Tier_0;
-using System.Text.Json.Serialization;
-
-namespace ERDM.Tier_1
+namespace ERDM
 {
-    [JsonDerivedType(typeof(TrackNode), typeDiscriminator: "TrackNode")]
-    [JsonDerivedType(typeof(TrackEdge), typeDiscriminator: "TrackEdge")]
-    [JsonDerivedType(typeof(TrackNavigability), typeDiscriminator: "TrackNavigability")]
-    public abstract class Tier1 : MapDataObject
-	{
-        public string? id { get; set; }
-        public string? name{get;set;}
-		public string? version{get;set;}
-	}
-
+    public class Tier1
+    {
+        public List<TrackNode>? TrackNode { get; set; }
+        public List<TrackEdge>? TrackEdge { get; set; }
+        public List<TrackNavigability>? TrackNavigability { get; set; }
+    }
 }

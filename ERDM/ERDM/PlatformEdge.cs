@@ -7,7 +7,7 @@ using System.Text.Json.Serialization;
 
 namespace ERDM.Tier_3
 {
-	public class PlatformEdge : Tier3
+	public class PlatformEdge : Base3
 	{
 		public string? appliesToLinearContiguousTrackArea { get;set;}
         public PassengersBoardAndAlign? situatedSide{get;set;}

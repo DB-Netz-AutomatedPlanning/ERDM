@@ -8,7 +8,7 @@ namespace ERDM.Tier_3
 {
     [JsonDerivedType(typeof(TrackZone), typeDiscriminator: "TrackZone")]
     [JsonDerivedType(typeof(ProtectionZone), typeDiscriminator: "ProtectionZone")]
-    public class Zone : Tier3
+    public class Zone : Base3
 	{
 		public string? appliesToTrackArea { get;set;}
 		[JsonConverter(typeof(DoubleThreeDecimalsConverter))]

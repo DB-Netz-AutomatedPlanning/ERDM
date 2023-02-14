@@ -1,23 +1,22 @@
-
-using ERDM.Tier_0;
+﻿using ERDM.Tier_2;
 using ERDM.Tier_3;
-using System.Text.Json.Serialization;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-namespace ERDM.Tier_2
+namespace ERDM
 {
-    [JsonDerivedType(typeof(AreaOfControl), typeDiscriminator: "AreaOfControl")]
-    [JsonDerivedType(typeof(TrackEdgePoint), typeDiscriminator: "TrackEdgePoint")]
-    [JsonDerivedType(typeof(DirectedTrackEdgePoint), typeDiscriminator: "DirectedTrackEdgePoint")]
-    [JsonDerivedType(typeof(TrackEdgeSection), typeDiscriminator: "TrackEdgeSection")]
-    [JsonDerivedType(typeof(DirectedTrackEdgeSection), typeDiscriminator: "DirectedTrackEdgeSection")]
-    [JsonDerivedType(typeof(TrackArea), typeDiscriminator: "TrackArea")]
-    [JsonDerivedType(typeof(ContiguousTrackArea), typeDiscriminator: "ContiguousTrackArea")]
-    [JsonDerivedType(typeof(LinearContiguousTrackArea), typeDiscriminator: "LinearContiguousTrackArea")]
-    public class Tier2 : MapDataObject
-	{
-        public string? id { get; set; }
-        public string? name{get;set;}
-		public string? version{get;set;}
-	}
-
+    public class Tier2
+    {
+        public List<AreaOfControl>? AreaOfControl { get; set; }
+        public List<TrackEdgePoint>? TrackEdgePoint { get; set; }
+        public List<DirectedTrackEdgePoint>? DirectedTrackEdgePoint { get; set; }
+        public List<TrackEdgeSection>? TrackEdgeSection { get; set; }
+        public List<DirectedTrackEdgeSection>? DirectedTrackEdgeSection { get; set; }
+        public List<TrackArea>? TrackArea { get; set; }
+        public List<ContiguousTrackArea>? ContiguousTrackArea { get; set; }
+        public List<LinearContiguousTrackArea>? LinearContiguousTrackArea { get; set; }
+    }
 }

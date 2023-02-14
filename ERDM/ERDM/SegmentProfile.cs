@@ -7,7 +7,7 @@ using System.Text.Json.Serialization;
 
 namespace ERDM.Tier_3
 {
-	public class SegmentProfile : Tier3
+	public class SegmentProfile : Base3
 	{
 		public string? segmentProfileIdentifier{get;set;}
 		public int? countryIdentifier{get;set;}

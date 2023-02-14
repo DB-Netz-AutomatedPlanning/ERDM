@@ -6,7 +6,7 @@ using System.Text.Json.Serialization;
 
 namespace ERDM.Tier_3
 {
-	public class TractionSystem : Tier3
+	public class TractionSystem : Base3
 	{
 		[JsonConverter(typeof(TractionSystemTypeJsonConverter))]
 		public TractionSystemType? voltageCategory{get;set;}

@@ -14,6 +14,6 @@
     </dependencies>
   </metadata>
   <files>
-    <file src="F:\ERDM\ERDM_C#_Library_.Net_6\ERDM\ERDM\bin\Debug\net6.0\ERDM.dll" target="lib\net6.0\ERDM.dll" />
+    <file src="F:\ERDM\ERDM_C#_Library\ERDM\ERDM\ERDM\bin\Debug\net6.0\ERDM.dll" target="lib\net6.0\ERDM.dll" />
   </files>
 </package>

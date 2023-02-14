@@ -5,7 +5,7 @@ using System.Text.Json.Serialization;
 
 namespace ERDM.Tier_0
 {
-	public class GeoCoordinates : Tier0
+	public class GeoCoordinates : Base0
 	{
 		
 		public string? name{get;set;}

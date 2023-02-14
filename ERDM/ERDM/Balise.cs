@@ -8,7 +8,7 @@ using System.Text.Json.Serialization;
 
 namespace ERDM.Tier_3
 {
-	public class Balise : Tier3
+	public class Balise : Base3
 	{
 		public string? appliesToTrackEdgePoint { get;set;}
 		public int? positionInGroup{get;set;}

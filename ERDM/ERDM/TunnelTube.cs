@@ -7,7 +7,7 @@ using System.Text.Json.Serialization;
 
 namespace ERDM.Tier_3
 {
-	public class TunnelTube : Tier3
+	public class TunnelTube : Base3
 	{
 		public List<string>? appliesToTrackArea{get;set;}
 		public string? hasStartTunnelPortal { get;set;}
