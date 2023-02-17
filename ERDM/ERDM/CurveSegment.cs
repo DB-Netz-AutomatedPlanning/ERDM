@@ -10,7 +10,7 @@ namespace ERDM.Tier_3
     [JsonDerivedType(typeof(CurveSegmentLine), typeDiscriminator: "CurveSegmentLine")]
     [JsonDerivedType(typeof(CurveSegmentArc), typeDiscriminator: "CurveSegmentArc")]
     [JsonDerivedType(typeof(CurveSegmentTransition), typeDiscriminator: "CurveSegmentTransition")]
-    public abstract class CurveSegment : Base3
+    public abstract class CurveSegment : Tier3
 	{
 		public List<string>? appliesToTrackEdgeSection{get;set;}
 	}

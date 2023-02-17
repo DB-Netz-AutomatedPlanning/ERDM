@@ -13,11 +13,21 @@ namespace ERDM
 {
     public class ERDMmodel
     {
-        [JsonPropertyName("$type")]
-        public string? type { get; } = "ERDM";
-        public List<Base0>? Tier0 { get; set; }
-        public List<Base1>? Tier1 { get; set; }
-        public List<Base2>? Tier2 { get; set; }
-        public List<Base3>? Tier3 { get; set; }
+        [JsonPropertyName("Tier0")]
+        public Tier0Container Tier0 { get; set; }
+        [JsonPropertyName("Tier1")]
+        public Tier1Container Tier1 { get; set; }
+        [JsonPropertyName("Tier2")]
+        public Tier2Container Tier2 { get; set; }
+        [JsonPropertyName("Tier3")]
+        public Tier3Container Tier3 { get; set; }
+
+        public ERDMmodel()
+        {
+            Tier0 = new Tier0Container();
+            Tier1 = new Tier1Container();
+            Tier2 = new Tier2Container();
+            Tier3 = new Tier3Container();
+        }
     }
 }

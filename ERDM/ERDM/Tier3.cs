@@ -1,58 +1,60 @@
-﻿using ERDM.Tier_3;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace ERDM
+using ERDM.Tier_0;
+
+using System.Text.Json.Serialization;
+
+namespace ERDM.Tier_3
 {
-    public class Tier3
-    {
-        public List<AdjacentAreaOfControl>? AdjacentAreaOfControl { get; set; }
-        public List<StaticSpeedProfile>? StaticSpeedProfile { get; set; }
-        public List<SpecificStaticSpeedProfile>? SpecificStaticSpeedProfile { get; set; }
-        public List<AxleLoadSpeedProfile>? AxleLoadSpeedProfile { get; set; }
-        public List<GradientSegmentLine>? GradientSegmentLine { get; set; }
-        public List<GradientSegmentArc>? GradientSegmentArc { get; set; }
-        public List<CurveSegmentLine>? CurveSegmentLine { get; set; }
-        public List<CurveSegmentArc>? CurveSegmentArc { get; set; }
-        public List<CurveSegmentTransition>? CurveSegmentTransition { get; set; }
-        public List<CantSegmentLine>? CantSegmentLine { get; set; }
-        public List<AllocationSection>? AllocationSection { get; set; }
-        public List<DriveProtectionSection>? DriveProtectionSection { get; set; }
-        public List<DriveProtectionSectionGroup>? DriveProtectionSectionGroup { get; set; }
-        public List<Balise>? Balise { get; set; }
-        public List<BaliseGroup>? BaliseGroup { get; set; }
-        public List<SegmentProfile>? SegmentProfile { get; set; }
-        public List<Landmark>? Landmark { get; set; }
-        public List<LightSignal>? LightSignal { get; set; }
-        public List<ETCSMarker>? ETCSMarker { get; set; }
-        public List<StopLocation>? StopLocation { get; set; }
-        public List<PlatformEdge>? PlatformEdge { get; set; }
-        public List<TunnelPortal>? TunnelPortal { get; set; }
-        public List<TunnelTube>? TunnelTube { get; set; }
-        public List<Tunnel>? Tunnel { get; set; }
-        public List<SimplePoint>? SimplePoint { get; set; }
-        public List<SlipCrossing>? SlipCrossing { get; set; }
-        public List<Derailer>? Derailer { get; set; }
-        public List<DiamondCrossing>? DiamondCrossing { get; set; }
-        public List<LevelCrossing>? LevelCrossing { get; set; }
-        public List<TrackCondition>? TrackCondition { get; set; }
-        public List<TractionSystem>? TractionSystem { get; set; }
-        public List<CurrentLimitation>? CurrentLimitation { get; set; }
-        public List<PermittedBrakingDistance>? PermittedBrakingDistance { get; set; }
-        public List<TrackProperties>? TrackProperties { get; set; }
-        public List<TracksideTrainDetectionArea>? TracksideTrainDetectionArea { get; set; }
-        public List<MpTargetMarker>? MpTargetMarker { get; set; }
-        public List<RiskBufferConfiguration>? RiskBufferConfiguration { get; set; }
-        public List<Zone>? Zone { get; set; }
-        public List<TrackZone>? TrackZone { get; set; }
-        public List<NearTrackZone>? NearTrackZone { get; set; }
-        public List<ProtectionZone>? ProtectionZone { get; set; }
-        public List<OverheadLineEquipmentZone>? OverheadLineEquipmentZone { get; set; }
-        public List<GenericSpatialObject>? GenericSpatialObject { get; set; }
-        public List<GenericLinearObject>? GenericLinearObject { get; set; }
-        public List<GenericSpotObject>? GenericSpotObject { get; set; }
-    }
+    [JsonDerivedType(typeof(AdjacentAreaOfControl), typeDiscriminator: "AdjacentAreaOfControl")]
+    [JsonDerivedType(typeof(StaticSpeedProfile), typeDiscriminator: "StaticSpeedProfile")]
+    [JsonDerivedType(typeof(SpecificStaticSpeedProfile), typeDiscriminator: "SpecificStaticSpeedProfile")]
+    [JsonDerivedType(typeof(AxleLoadSpeedProfile), typeDiscriminator: "AxleLoadSpeedProfile")]
+    [JsonDerivedType(typeof(GradientSegmentLine), typeDiscriminator: "GradientSegmentLine")]
+    [JsonDerivedType(typeof(GradientSegmentArc), typeDiscriminator: "GradientSegmentArc")]
+    [JsonDerivedType(typeof(CurveSegmentLine), typeDiscriminator: "CurveSegmentLine")]
+    [JsonDerivedType(typeof(CurveSegmentArc), typeDiscriminator: "CurveSegmentArc")]
+    [JsonDerivedType(typeof(CurveSegmentTransition), typeDiscriminator: "CurveSegmentTransition")]
+    [JsonDerivedType(typeof(CantSegmentLine), typeDiscriminator: "CantSegmentLine")]
+    [JsonDerivedType(typeof(AllocationSection), typeDiscriminator: "AllocationSection")]
+    [JsonDerivedType(typeof(DriveProtectionSection), typeDiscriminator: "DriveProtectionSection")]
+    [JsonDerivedType(typeof(DriveProtectionSectionGroup), typeDiscriminator: "DriveProtectionSectionGroup")]
+    [JsonDerivedType(typeof(Balise), typeDiscriminator: "Balise")]
+    [JsonDerivedType(typeof(BaliseGroup), typeDiscriminator: "BaliseGroup")]
+    [JsonDerivedType(typeof(SegmentProfile), typeDiscriminator: "SegmentProfile")]
+    [JsonDerivedType(typeof(Landmark), typeDiscriminator: "Landmark")]
+    [JsonDerivedType(typeof(LightSignal), typeDiscriminator: "LightSignal")]
+    [JsonDerivedType(typeof(ETCSMarker), typeDiscriminator: "ETCSMarker")]
+    [JsonDerivedType(typeof(StopLocation), typeDiscriminator: "StopLocation")]
+    [JsonDerivedType(typeof(PlatformEdge), typeDiscriminator: "PlatformEdge")]
+    [JsonDerivedType(typeof(TunnelPortal), typeDiscriminator: "TunnelPortal")]
+    [JsonDerivedType(typeof(TunnelTube), typeDiscriminator: "TunnelTube")]
+    [JsonDerivedType(typeof(Tunnel), typeDiscriminator: "Tunnel")]
+    [JsonDerivedType(typeof(SimplePoint), typeDiscriminator: "SimplePoint")]
+    [JsonDerivedType(typeof(SlipCrossing), typeDiscriminator: "SlipCrossing")]
+    [JsonDerivedType(typeof(Derailer), typeDiscriminator: "Derailer")]
+    [JsonDerivedType(typeof(DiamondCrossing), typeDiscriminator: "DiamondCrossing")]
+    [JsonDerivedType(typeof(LevelCrossing), typeDiscriminator: "LevelCrossing")]
+    [JsonDerivedType(typeof(TrackCondition), typeDiscriminator: "TrackCondition")]
+    [JsonDerivedType(typeof(TractionSystem), typeDiscriminator: "TractionSystem")]
+    [JsonDerivedType(typeof(CurrentLimitation), typeDiscriminator: "CurrentLimitation")]
+    [JsonDerivedType(typeof(PermittedBrakingDistance), typeDiscriminator: "PermittedBrakingDistance")]
+    [JsonDerivedType(typeof(TrackProperties), typeDiscriminator: "TrackProperties")]
+    [JsonDerivedType(typeof(TracksideTrainDetectionArea), typeDiscriminator: "TracksideTrainDetectionArea")]
+    [JsonDerivedType(typeof(MpTargetMarker), typeDiscriminator: "MpTargetMarker")]
+    [JsonDerivedType(typeof(RiskBufferConfiguration), typeDiscriminator: "RiskBufferConfiguration")]
+    [JsonDerivedType(typeof(Zone), typeDiscriminator: "Zone")]
+    [JsonDerivedType(typeof(TrackZone), typeDiscriminator: "TrackZone")]
+    [JsonDerivedType(typeof(NearTrackZone), typeDiscriminator: "NearTrackZone")]
+    [JsonDerivedType(typeof(ProtectionZone), typeDiscriminator: "ProtectionZone")]
+    [JsonDerivedType(typeof(OverheadLineEquipmentZone), typeDiscriminator: "OverheadLineEquipmentZone")]
+    [JsonDerivedType(typeof(GenericSpatialObject), typeDiscriminator: "GenericSpatialObject")]
+    [JsonDerivedType(typeof(GenericLinearObject), typeDiscriminator: "GenericLinearObject")]
+    [JsonDerivedType(typeof(GenericSpotObject), typeDiscriminator: "GenericSpotObject")]
+    public class Tier3 : MapDataObject
+	{
+        public string? id { get; set; }
+        public string? name{get;set;}
+		public string? version{get;set;}
+	}
+
 }

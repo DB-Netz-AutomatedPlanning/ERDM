@@ -9,7 +9,7 @@ namespace ERDM.Tier_3
 {
     [JsonDerivedType(typeof(GradientSegmentLine), typeDiscriminator: "GradientSegmentLine")]
     [JsonDerivedType(typeof(GradientSegmentArc), typeDiscriminator: "GradientSegmentArc")]
-    public abstract class GradientSegment : Base3
+    public abstract class GradientSegment : Tier3
 	{
         [JsonConverter(typeof(DoubleThreeDecimalsConverter))]
         public double? startAltitude{get;set;}

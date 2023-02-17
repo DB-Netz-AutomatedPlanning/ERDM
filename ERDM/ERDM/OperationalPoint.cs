@@ -7,7 +7,7 @@ using System.Text.Json.Serialization;
 
 namespace ERDM.Tier_0
 {
-	public class OperationalPoint : Base0
+	public class OperationalPoint : Tier0
 	{
 		
 		public string? name{get;set;}

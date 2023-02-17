@@ -7,7 +7,7 @@ using System.Text.Json.Serialization;
 
 namespace ERDM.Tier_0
 {
-	public class Version : Base0
+	public class Version : Tier0
 	{
 		public int? version{get;set;}
 		public DateTimeOffset? created{get;set;}

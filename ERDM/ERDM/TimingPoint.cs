@@ -5,7 +5,7 @@ using System.Text.Json.Serialization;
 
 namespace ERDM.Tier_3
 {
-	public class TimingPoint : Base3
+	public class TimingPoint : Tier3
 	{
 		public string? timingPointIdentifier{get;set;}
 		public string? appliesToTrackEdgePoint{get;set;}

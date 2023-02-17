@@ -6,7 +6,7 @@ using System.Text.Json.Serialization;
 
 namespace ERDM.Tier_3
 {
-	public class TrackCondition : Base3
+	public class TrackCondition : Tier3
 	{
         [JsonConverter(typeof(TrackConditionTypeJsonConverter))]
         public TrackConditionType? condition{get;set;}

@@ -5,7 +5,7 @@ using System.Text.Json.Serialization;
 
 namespace ERDM.Tier_3
 {
-	public class TrackProperties : Base3
+	public class TrackProperties : Tier3
 	{
 		public LineCategoryClassification? lineCategory{get;set;}
 		[JsonConverter(typeof(LoadingGaugeClassificationJsonConverter))]

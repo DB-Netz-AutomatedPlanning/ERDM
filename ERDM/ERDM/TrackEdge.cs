@@ -7,7 +7,7 @@ using System.Text.Json.Serialization;
 
 namespace ERDM.Tier_1
 {
-	public class TrackEdge : Base1
+	public class TrackEdge : Tier1
 	{
         [JsonConverter(typeof(DoubleThreeDecimalsConverter))]
         public double? length{get;set;}

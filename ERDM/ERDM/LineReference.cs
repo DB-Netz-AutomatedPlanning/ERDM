@@ -5,7 +5,7 @@ using System.Text.Json.Serialization;
 
 namespace ERDM.Tier_0
 {
-	public class LineReference : Base0
+	public class LineReference : Tier0
 	{
         [JsonConverter(typeof(DoubleThreeDecimalsConverter))]
         public double? lineKilometre{get;set;}

@@ -9,7 +9,7 @@ namespace ERDM.Tier_3
     [JsonDerivedType(typeof(StaticSpeedProfile), typeDiscriminator: "StaticSpeedProfile")]
     [JsonDerivedType(typeof(SpecificStaticSpeedProfile), typeDiscriminator: "SpecificStaticSpeedProfile")]
     [JsonDerivedType(typeof(AxleLoadSpeedProfile), typeDiscriminator: "AxleLoadSpeedProfile")]
-    public abstract class SpeedProfile : Base3
+    public abstract class SpeedProfile : Tier3
 	{
 		public List<string>? appliesToTrackEdgeSection{get;set;}
 		public int? speed{get;set;}
