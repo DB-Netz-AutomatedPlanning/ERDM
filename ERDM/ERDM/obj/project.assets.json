@@ -263,9 +263,10 @@
         "net6.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "F:\\ERDM\\ERDM_C#_Library\\ERDM\\ERDM\\ERDM\\bin": {},
         "F:\\ERDM\\Libraries": {},
-        "F:\\RCA\\RCA_Nuget": {},
-        "https://api.nuget.org/v3/index.json": {}
+        "F:\\RCA\\RCA_Nuget": {}
       },
       "frameworks": {
         "net6.0": {
